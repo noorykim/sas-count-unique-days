@@ -1,6 +1,4 @@
-%macro countUniqueDays(
-  inputDataset=, idVariable=, startDateVariable=, endDateVariable=, 
-  outputDataset=);
+%macro countUniqueDays(inputDataset=, idVariable=, startDateVariable=, endDateVariable=, outputDataset=);
 
   /* ---------------------------------------------------------------------
 
@@ -17,16 +15,14 @@
 
      Default values:
        Name of output dataset: &inputDataset._daycount
-       Missing value for &endDateVariable replaced by value for    
-         &startDateVariable
+       Missing value for &endDateVariable replaced by value for &startDateVariable
 
      Names of temporary datasets: _temp0, _temp11, _temp12, _temp21
 
      Output data set variables:
        &idVariable
        DAYCOUNT - number of distinct days for each value of &idVariable
-       BLOCKCOUNT - number of disjoint time intervals for each value of 
-        &idVariable
+       BLOCKCOUNT - number of disjoint time intervals for each value of &idVariable
 
      --------------------------------------------------------------------- */
 
@@ -121,6 +117,4 @@ data one;
 ;
 run;
 
-%countUniqueDays(inputDataset=one, idVariable=usubjid, 
-                 startDateVariable=stdt, endDateVariable=endt,
-                 outputDataset=two); 
+%countUniqueDays(inputDataset=one, idVariable=usubjid, startDateVariable=stdt, endDateVariable=endt, outputDataset=two); 
