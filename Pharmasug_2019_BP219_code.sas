@@ -24,6 +24,13 @@
        DAYCOUNT - number of distinct days for each value of &idVariable
        BLOCKCOUNT - number of disjoint time intervals for each value of &idVariable
 
+     ---------------------------------------------------------------------
+
+     Reference:
+     https://www.pharmasug.org/proceedings/2019/BP/PharmaSUG-2019-BP-219.pdf
+       PharmaSUG 2019 - Paper BP-219 
+       Making the Days Count: Counting Distinct Days in Overlapping or Disjoint Date Intervals 
+
      --------------------------------------------------------------------- */
 
     /* define name of outputDataset if null */
